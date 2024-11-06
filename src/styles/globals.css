@@ -11,7 +11,7 @@ body {
   background-color: #3a70ff;
   margin: 0;
   font-family: var(--font-mons);
-  font-size: var(--fs-small);
+  font-size: var(--fs-medium);
   font-weight: 500;
   color: var(--main-text-color);
   line-height: 19.5px;

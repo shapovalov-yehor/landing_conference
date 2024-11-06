@@ -3,7 +3,7 @@
 
   --background: #f1f1f6;
   --foreground: #fbfbfb;
-  --second-color: rgba(86, 113, 255, 1);
+  --second-color: #5671ff;
   --main-text-color: #10152c;
   --main-grad: linear-gradient(97.88deg, #3773ff 0%, #8c40ff 100%);
 
@@ -18,7 +18,7 @@
   --fs-small: 16px;
   --fs-medium: 18px;
   --fs-large: 23px;
-  --fs-xlarge: 30px;
+  --fs-xlarge: 32px;
   --fs-xxlarge: 64px;
   --fs-xxxlarge: 144px;
 

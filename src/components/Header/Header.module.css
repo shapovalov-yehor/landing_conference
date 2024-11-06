@@ -23,13 +23,8 @@
 */
 }
 
-.logo {
-  width: 48px;
-  height: auto;
-}
-
 .logo_text {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-small);
   font-weight: 700;
   line-height: 19.5px;
   color: var(--header-text-color);
@@ -51,19 +46,9 @@
 
 .nav_link {
   color: var(--header-text-color);
-}
-
-.nav_list {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav_link {
-  color: var(--header-text-color);
   position: relative;
   text-decoration: none;
+  font-size: var(--fs-small);
 
   &::after {
     content: '';

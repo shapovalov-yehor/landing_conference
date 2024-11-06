@@ -1,0 +1,65 @@
+.ecosystem {
+  width: 100%;
+  background-color: var(--background);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--desktop);
+  padding: 142px 0 120px;
+}
+
+.header {
+  font-size: var(--fs-xxlarge);
+  font-weight: 700;
+  line-height: 78.02px;
+  margin-bottom: 60px;
+  text-align: right;
+}
+
+.par_wrap_first {
+  padding: 40px;
+  padding-bottom: 176px;
+  background-image: url('../../img/about/eco.webp');
+  background-repeat: no-repeat;
+  background-size: 295px 237px;
+  background-position: bottom 0px right 13.5px;
+  background-color: var(--foreground);
+  border-radius: 32px;
+}
+
+.eco_par_wrap {
+  background-image: var(--main-grad);
+  border-radius: 32px;
+  padding: 40px;
+  & p {
+    color: #fff;
+  }
+}
+
+.par_wrap_second {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.eco_par_header {
+  font-size: var(--fs-xlarge);
+  font-weight: 700;
+  line-height: 38.4px;
+  color: var(--second-color);
+  margin-bottom: 8px;
+}
+
+.eco_par {
+  line-height: 27px;
+  & span {
+    font-weight: 800;
+  }
+}
+
+.eco_wrap {
+  display: flex;
+  gap: 32px;
+}

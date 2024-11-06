@@ -1,23 +1,15 @@
 'use client';
 
-import Image from 'next/image';
 import styles from './Header.module.css';
-import logo from '../../img/header/logo.png';
 import { navItems } from '@/data/data';
+import Icon from '@/helpers/Icon';
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <a className={styles.logo_wrap} href="/">
-          <Image
-            className={styles.logo}
-            src={logo}
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="logo"
-          />
+          <Icon name="icon-logo" width={48} height={40} />
           <span className={styles.logo_text}>MUSTAGE</span>
         </a>
         <nav>
