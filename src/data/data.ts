@@ -7,7 +7,7 @@ import proxy from '../img/development/proxy.webp';
 export const navItems = [
   { label: 'Кто мы такие', href: '#about' },
   { label: 'Экосистема', href: '#ecosystem' },
-  { label: 'Наша ценность для сообщества', href: '#value' },
+  { label: 'Наша ценность для сообщества', href: '#community' },
   { label: 'Наши принципы', href: '#principles' },
   { label: 'Достижения в цифрах', href: '#achievements' },
   { label: 'Контакты', href: '#contacts' },

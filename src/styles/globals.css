@@ -8,7 +8,6 @@ html {
 
 body {
   background-color: var(--background);
-  background-color: #3a70ff;
   margin: 0;
   font-family: var(--font-mons);
   font-size: var(--fs-medium);
