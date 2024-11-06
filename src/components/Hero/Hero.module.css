@@ -1,0 +1,87 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--hero-back);
+  background-image: var(--main-grad);
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--desktop);
+  height: calc(100vh - 114px);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.hero_text {
+  font-weight: 800;
+  line-height: 144px;
+  font-size: var(--fs-xxxlarge);
+  max-width: 1170px;
+  background-image: var(--hero-text-grad);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding-bottom: 168px;
+}
+
+.hero_logo {
+  position: absolute;
+  width: 273.15px;
+  height: auto;
+  bottom: 286px;
+  left: 814px;
+  transform: rotate(27deg);
+}
+
+.hero_link {
+  display: inline-block;
+  font-size: var(--fs-large);
+  font-weight: 800;
+  line-height: 23px;
+  color: var(--hero-text-color);
+}
+
+.marquee_wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+  background-color: var(--foreground);
+  padding: 45.5px 0;
+}
+
+.marquee {
+  animation: scroll 20s linear infinite;
+  flex-shrink: 0;
+  display: flex;
+  gap: 20.5px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.text_wrap {
+  counter-increment: item;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20.5px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
