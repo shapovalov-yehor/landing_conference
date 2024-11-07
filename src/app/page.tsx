@@ -1,4 +1,6 @@
 import About from '@/components/About/About';
+import Achieve from '@/components/Achieve/Achieve';
+import Clients from '@/components/Clients/Clients';
 import Community from '@/components/Community/Community';
 import Development from '@/components/Development/Development';
 import Ecosystem from '@/components/Ecosystem/Ecosystem';
@@ -19,6 +21,8 @@ export default function Home() {
         <Community />
         <Media />
         <Values />
+        <Achieve />
+        <Clients />
       </main>
     </>
   );

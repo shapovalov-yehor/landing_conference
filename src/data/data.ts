@@ -4,6 +4,13 @@ import bot from '../img/development/bot.webp';
 import creo from '../img/development/creo.webp';
 import proxy from '../img/development/proxy.webp';
 
+import cloakIt from '../img/clients/cloak-it.webp';
+import cloaking from '../img/clients/cloaking.webp';
+import digital from '../img/clients/digital.webp';
+import dolphin from '../img/clients/dolphin.webp';
+import proxyClient from '../img/clients/proxy.webp';
+import sender from '../img/clients/sender.webp';
+
 export const navItems = [
   { label: 'Кто мы такие', href: '#about' },
   { label: 'Экосистема', href: '#ecosystem' },
@@ -43,5 +50,47 @@ export const devItems = [
     text: 'Наш специализированный Telegram-бот стал эффективным решением для уникализации креативов. Интегрируясь с мессенджером Telegram, бот обрабатывает фото- и видео материалы быстро и качественно, значительно расширяя возможности для создания успешных рекламных кампаний.',
     img: bot,
     link: '#',
+  },
+];
+
+export const clientsItems = [
+  {
+    header: 'Антидетект браузер Dolphin{anty}',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ',
+    img: dolphin,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
+  },
+  {
+    header:
+      'Smart Sender - платформа для создания чатов и ботов для Telegram, Facebook Messenger, Viber, Instagram, VKontakte и Skype.',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ( ссылка на презентацию по рекламе на наших медиа ).',
+    img: sender,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
+  },
+  {
+    header: 'CLOAK IT сервис фильтрации трафика',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ( ссылка на презентацию по рекламе на наших медиа ).',
+    img: cloakIt,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
+  },
+  {
+    header: 'Сервис аренды мобильных прокси z-proxy.com',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ( ссылка на презентацию по рекламе на наших медиа ).',
+    img: proxyClient,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
+  },
+
+  {
+    header: 'Cloaking House сервис фильтрации трафика',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ( ссылка на презентацию по рекламе на наших медиа ).',
+    img: cloaking,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
+  },
+
+  {
+    header: 'DigitalOcean поставщик облачных вычислений',
+    text: 'Узнать количество привлеченных пользователей и способы продвижения можно по ссылке - ( ссылка на презентацию по рекламе на наших медиа ).',
+    img: digital,
+    link: 'https://dawn-top-e5f.notion.site/Mustage-Media Group-332f846f27cd46339cefc82a58e21f4d',
   },
 ];
