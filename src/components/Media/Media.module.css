@@ -7,7 +7,7 @@
   width: 100%;
   max-width: var(--desktop);
   padding-bottom: 120px;
-  background-image: url('../../img/media/back.png');
+  background-image: url('../../img/media/back.webp');
   background-repeat: no-repeat;
   background-size: 448px 451px;
   background-position: top 138px left 0;
@@ -112,6 +112,7 @@
   font-weight: 700;
   line-height: 21.94px;
   color: var(--second-color);
+  max-width: 690px;
   & svg {
     fill: var(--second-color);
   }

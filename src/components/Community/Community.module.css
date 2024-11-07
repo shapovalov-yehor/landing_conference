@@ -54,7 +54,7 @@
   border-radius: 40px;
   font-weight: 700;
   line-height: 21.94px;
-  color: #fff;
+  color: var(--foreground);
   & span {
     width: 480px;
   }
