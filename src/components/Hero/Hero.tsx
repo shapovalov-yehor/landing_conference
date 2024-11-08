@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import logo from '../../img/hero/logo.webp';
+import logo from '../../img/hero/logo.svg';
 import Image from 'next/image';
 
 export default function Hero() {

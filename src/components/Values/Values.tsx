@@ -7,7 +7,7 @@ import Icon from '@/helpers/Icon';
 
 export default function Values() {
   return (
-    <section className={styles.values}>
+    <section id="values" className={styles.values}>
       <div className={styles.container}>
         <div className={styles.header_wrap}>
           <h2 className={styles.header}>Наши ценности</h2>
@@ -82,7 +82,7 @@ export default function Values() {
           </ul>
 
           <a
-            href="#"
+            href="https://t.me/usaffiliate"
             className={styles.button}
             target="_blank"
             rel="noopener noreferrer"

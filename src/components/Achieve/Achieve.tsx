@@ -31,26 +31,26 @@ export default function Achieve() {
           </li>
           <li>
             <p className={styles.count}>
-              вписать<span>+</span>
+              40563<span>+</span>
             </p>
             <p>просмотров за последние 90 дней</p>
           </li>
 
           <li>
             <p className={styles.count}>
-              вписать<span>+</span>
+              5851<span>+</span>
             </p>
             <p>пользователей наших ботов</p>
           </li>
           <li>
             <p className={styles.count}>
-              вписать<span>+</span>
+              2992<span>+</span>
             </p>
             <p>выпускников Academy</p>
           </li>
           <li>
             <a
-              href="#"
+              href="https://t.me/usaffiliate"
               className={styles.button}
               target="_blank"
               rel="noopener noreferrer"

@@ -65,7 +65,7 @@ export default function Media() {
                   Полный список наших ботов вы можете увидеть по ссылке:
                 </p>
                 <a
-                  href="#"
+                  href="https://dawn-top-e5f.notion.site/1eee9955ca9d4c18bca3b0e67f2c92e7"
                   className={styles.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Media() {
             </li>
           </ul>
           <a
-            href="#"
+            href="https://t.me/usaffiliate"
             className={styles.button}
             target="_blank"
             rel="noopener noreferrer"

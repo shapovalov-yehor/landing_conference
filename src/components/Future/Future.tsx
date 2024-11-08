@@ -21,7 +21,7 @@ export default function Future() {
             ))}
           </ul>
           <a
-            href="#"
+            href="https://t.me/usaffiliate"
             className={styles.button}
             target="_blank"
             rel="noopener noreferrer"
