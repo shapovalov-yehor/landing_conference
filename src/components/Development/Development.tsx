@@ -1,5 +1,6 @@
 import styles from './Development.module.css';
 import { devItems } from '@/data/data';
+import Icon from '@/helpers/Icon';
 import Image from 'next/image';
 
 export default function Development() {
@@ -34,7 +35,8 @@ export default function Development() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Перейти к продукту
+                <span>Перейти к продукту</span>
+                <Icon name="icon-arrow" width={24} height={24} />
               </a>
             </li>
           ))}

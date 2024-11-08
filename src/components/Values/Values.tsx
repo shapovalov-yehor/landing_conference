@@ -11,10 +11,12 @@ export default function Values() {
       <div className={styles.container}>
         <div className={styles.header_wrap}>
           <h2 className={styles.header}>Наши ценности</h2>
-          <div className={styles.icon_wrap}>
-            <Icon name="icon-star" width={24} height={24} />
+          <div className={styles.line_wrap}>
+            <div className={styles.icon_wrap}>
+              <Icon name="icon-star" width={24} height={24} />
+            </div>
+            <div className={styles.line}></div>
           </div>
-          <div className={styles.line}></div>
         </div>
         <div className={styles.list_wrap}>
           <ul className={styles.list}>

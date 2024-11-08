@@ -20,7 +20,7 @@
 
   --fs-small: 16px;
   --fs-medium: 18px;
-  --fs-large: 23px;
+  --fs-large: 24px;
   --fs-xlarge: 32px;
   --fs-xxlarge: 64px;
   --fs-xxxlarge: 144px;
@@ -31,4 +31,6 @@
   --tablet: 768px;
   --laptop: 1024px;
   --desktop: 1408px;
+
+  --container: 91.1%;
 }

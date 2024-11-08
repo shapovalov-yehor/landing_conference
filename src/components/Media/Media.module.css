@@ -4,48 +4,73 @@
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: var(--desktop);
-  padding-bottom: 120px;
+  max-width: var(--container);
+  padding-bottom: 80px;
   background-image: url('../../img/media/back.webp');
   background-repeat: no-repeat;
-  background-size: 448px 451px;
-  background-position: top 138px left 0;
+  background-size: 328px 330px;
+  background-position: top 136px center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
+  @media (min-width: 1408px) {
+    max-width: var(--desktop);
+    padding-bottom: 120px;
+    background-size: 448px 451px;
+    background-position: top 138px left 0;
+    align-items: flex-end;
+  }
 }
 
 .header {
-  font-size: var(--fs-xxlarge);
+  line-height: 48px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 78.02px;
-  margin-bottom: 60px;
+  margin-bottom: 402px;
   text-align: right;
+  @media (min-width: 1408px) {
+    font-size: var(--fs-xxlarge);
+    line-height: 78.02px;
+    margin-bottom: 60px;
+  }
 }
 
 .button {
-  display: inline-block;
-  padding: 21px 48px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  line-height: 19.5px;
+  display: block;
+  padding: 18px 40px;
   box-shadow: 0px 20px 31.4px -13px rgba(55, 58, 255, 0.4);
   background-image: var(--main-grad);
   border-radius: 200px;
-  font-weight: 600;
-  line-height: 21.94px;
   text-align: center;
   color: #fff;
-  margin-left: 592px;
+  margin: 0 auto;
+  width: var(--container);
+  max-width: 336px;
+  margin-top: 40px;
+  @media (min-width: 1408px) {
+    font-size: var(--fs-medium);
+    display: inline-block;
+    padding: 21px 48px;
+    line-height: 21.94px;
+    margin: 0;
+    margin-left: 592px;
+  }
 }
 
 .main_wrap {
   display: flex;
   flex-direction: column;
-  width: 928px;
+  @media (min-width: 1408px) {
+    width: 928px;
+  }
 }
 
 .icon_wrap {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,24 +80,45 @@
   & svg {
     filter: drop-shadow(0px 4px 12px rgba(86, 113, 255, 0.5));
   }
+
+  @media (min-width: 1408px) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .item {
   display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 16px;
+  margin-bottom: 24px;
   & p {
-    width: 832px;
-    line-height: 27px;
+    width: calc(100% - 80px);
+    font-size: var(--fs-small);
+    line-height: 24px;
 
     & span {
       font-weight: 700;
     }
   }
+  @media (min-width: 1408px) {
+    gap: 24px;
+    margin-bottom: 40px;
+    & p {
+      font-size: var(--fs-medium);
+      width: 832px;
+      line-height: 27px;
+    }
+  }
 }
 
 .bot_wrap {
-  width: 832px;
+  width: calc(100% - 80px);
+  & p {
+    width: 100%;
+  }
+  @media (min-width: 1408px) {
+    width: 832px;
+  }
 }
 
 .bot_list {
@@ -90,31 +136,61 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 8px;
     width: 8px;
     height: 8px;
     background-color: var(--second-color);
     border-radius: 50%;
   }
+
+  @media (min-width: 1408px) {
+    & li::before {
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .bot_par {
+  font-size: var(--fs-small);
   font-weight: 600;
-  line-height: 21.94px;
+  line-height: 24px;
   margin-bottom: 8px;
+  @media (min-width: 1408px) {
+    font-size: var(--fs-medium);
+    line-height: 21.94px;
+  }
 }
 
 .link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: var(--fs-small);
   font-weight: 700;
-  line-height: 21.94px;
+  line-height: 19.5px;
+  display: flex;
+
+  gap: 8px;
   color: var(--second-color);
-  max-width: 690px;
   & svg {
     fill: var(--second-color);
+  }
+  & span {
+    display: inline-block;
+    max-width: calc(100% - 35px);
+    white-space: break-spaces;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  @media (min-width: 1408px) {
+    align-items: center;
+    font-size: var(--fs-medium);
+    line-height: 21.94px;
+    color: var(--second-color);
+    max-width: 690px;
+    & span {
+      max-width: 100%;
+    }
   }
 }
 
