@@ -1,26 +1,25 @@
 .header {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  max-width: var(--desktop);
-  background-color: var(--header-back);
-  border-radius: 0px 0px 32px 32px;
-
   z-index: 1;
 }
 
 .container {
-  padding: 24px;
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 91.1%;
+  background-color: var(--header-back);
+  border-radius: 0px 0px 32px 32px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 1408px) {
+    max-width: var(--desktop);
+    padding: 24px;
   }
-*/
 }
 
 .logo_text {
@@ -71,5 +70,31 @@
   &:hover::after,
   &:focus::after {
     transform: translateX(-50%) scaleX(1);
+  }
+}
+
+.burger_wrap {
+  position: absolute;
+  z-index: 1001;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  width: 48px;
+  height: 32px;
+  border-radius: 100px;
+  background-color: rgba(240, 237, 246, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
   }
 }

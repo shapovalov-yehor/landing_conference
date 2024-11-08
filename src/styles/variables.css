@@ -16,7 +16,7 @@
 
   --value-back: linear-gradient(97.88deg, #5671ff 0%, #8466ff 100%);
 
-  --modal-overlay: rgba(0, 0, 0, 0.8);
+  --modal-overlay: rgba(31, 31, 31, 0.4);
 
   --fs-small: 16px;
   --fs-medium: 18px;
@@ -25,8 +25,9 @@
   --fs-xxlarge: 64px;
   --fs-xxxlarge: 144px;
 
-  --mobile: 375px;
-  --mobile-l: 475px;
+  --mobile: 328px;
+  --mobile-l: 360px;
+  --mobile-xl: 475px;
   --tablet: 768px;
   --laptop: 1024px;
   --desktop: 1408px;

@@ -129,7 +129,7 @@ export const resourseItems = [
   {
     text: 'Аккаунты Facebook для запуска рекламы',
     icon: 'icon-profile',
-    link: 'https://mustage.store/',
+    link: 'https://mustage.site/',
   },
   {
     text: 'Украинские мобильные прокси ($35/мес)',
