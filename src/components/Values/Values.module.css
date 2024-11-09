@@ -16,7 +16,7 @@
 }
 
 .header {
-  font-size: 40px;
+  font-size: var(--fs-mxlarge);
   font-weight: 700;
   line-height: 48px;
   color: var(--foreground);
@@ -41,8 +41,11 @@
     height: 16px;
   }
 
-  @media (min-width: 1408px) {
+  @media (min-width: 1024px) {
     order: 1;
+  }
+
+  @media (min-width: 1408px) {
     width: 64px;
     height: 64px;
 
@@ -57,7 +60,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  @media (min-width: 1408px) {
+
+  @media (min-width: 1024px) {
     flex-direction: row;
     gap: 18px;
     align-items: center;
@@ -78,7 +82,7 @@
   height: 4px;
   background-color: var(--foreground);
 
-  @media (min-width: 1408px) {
+  @media (min-width: 1024px) {
     order: 2;
   }
 }
@@ -112,10 +116,14 @@
     }
   }
 
-  @media (min-width: 1408px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
-    gap: 32px;
+    gap: 24px;
     align-items: flex-start;
+  }
+
+  @media (min-width: 1408px) {
+    gap: 32px;
 
     & li {
       padding: 32px;
@@ -144,12 +152,13 @@
 
 .button {
   display: block;
-  padding: 18px 40px;
+  padding: 18px 20px;
   box-shadow: 0px 0px 25px -13px rgba(55, 58, 255, 0.4);
   background-color: var(--foreground);
   border-radius: 200px;
   width: var(--container);
   margin: 0 auto;
+  text-align: center;
   max-width: 340px;
   & span {
     font-size: var(--fs-small);

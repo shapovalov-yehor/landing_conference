@@ -34,10 +34,19 @@
   margin-bottom: 40px;
   flex-direction: column;
 
-  @media (min-width: 1408px) {
+  @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+  }
+
+  @media (min-width: 1408px) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -87,7 +96,7 @@
 
 .email_wrap {
   width: 100%;
-  padding: 24px 40px 24px 26px;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -97,6 +106,7 @@
   border-radius: 32px;
 
   & a {
+    align-self: flex-start;
     font-size: var(--fs-large);
     line-height: 29.26px;
     color: rgba(86, 113, 255, 1);
@@ -113,14 +123,16 @@
     background-color: rgba(86, 113, 255, 1);
   }
 
-  @media (min-width: 1408px) {
-    width: 100%;
+  @media (min-width: 360px) {
+    padding: 24px 40px 24px 24px;
+  }
+
+  @media (min-width: 768px) {
     padding: 16px 40px;
     flex-direction: row;
     gap: 24px;
     align-items: center;
     justify-content: flex-end;
-
     & a {
       font-size: var(--fs-xlarge);
       line-height: 39.01px;

@@ -15,7 +15,7 @@
 }
 
 .header {
-  font-size: 40px;
+  font-size: var(--fs-mxlarge);
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 8px;
@@ -126,12 +126,17 @@
   border-radius: 24px;
   width: 100%;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 15px;
+  }
+
   @media (min-width: 1408px) {
     padding: 32px;
     gap: 24px;
     border-radius: 32px;
     width: 1168px;
-    flex-direction: row;
   }
 }
 

@@ -14,6 +14,7 @@ export default function Hero() {
           height={0}
           sizes="100vw"
           alt="Mustage Team logo"
+          priority
         />
       </div>
       <div className={styles.marquee_wrap}>

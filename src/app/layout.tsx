@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mustage Team',
     description: 'Mustage Team',
-    url: `${process.env.NEXT_PUBLIC_URL}`,
     type: 'website',
     images: [
       {
@@ -38,9 +37,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-  alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_URL}`,
   },
 };
 
