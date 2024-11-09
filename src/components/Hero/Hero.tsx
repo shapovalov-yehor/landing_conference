@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import logo from '../../img/hero/logo.webp';
+import logo from '../../img/hero/logo.svg';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -14,6 +14,7 @@ export default function Hero() {
           height={0}
           sizes="100vw"
           alt="Mustage Team logo"
+          priority
         />
       </div>
       <div className={styles.marquee_wrap}>

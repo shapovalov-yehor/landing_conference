@@ -6,7 +6,6 @@ import { clientsItems } from '@/data/data';
 export default function Clients() {
   return (
     <section id="clients" className={styles.clients}>
-      <div className={styles.container}>
         <h2 className={styles.header}>
           Так же мы{' '}
           <span>
@@ -78,14 +77,13 @@ export default function Clients() {
         </ul>
 
         <a
-          href="#"
+          href="https://t.me/usaffiliate"
           className={styles.button}
           target="_blank"
           rel="noopener noreferrer"
         >
           Начать работу с Mustage
         </a>
-      </div>
     </section>
   );
 }

@@ -23,7 +23,14 @@ export default function Footer() {
             </li>
           ))}
         </ul>
+        <div className={styles.email_wrap}>
+          <a href="mailto:support@mustage.io">support@mustage.io</a>
+          <div className={styles.email_icon_wrap}>
+            <Icon name="icon-email" width={32} height={32} />
+          </div>
+        </div>
       </div>
+
       <div className={styles.marquee_wrap}>
         <div className={styles.marquee}>
           {[...Array(10)].map((_, index) => (

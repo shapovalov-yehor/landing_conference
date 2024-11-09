@@ -7,14 +7,16 @@ import Icon from '@/helpers/Icon';
 
 export default function Values() {
   return (
-    <section className={styles.values}>
+    <section id="values" className={styles.values}>
       <div className={styles.container}>
         <div className={styles.header_wrap}>
           <h2 className={styles.header}>Наши ценности</h2>
-          <div className={styles.icon_wrap}>
-            <Icon name="icon-star" width={24} height={24} />
+          <div className={styles.line_wrap}>
+            <div className={styles.icon_wrap}>
+              <Icon name="icon-star" width={24} height={24} />
+            </div>
+            <div className={styles.line}></div>
           </div>
-          <div className={styles.line}></div>
         </div>
         <div className={styles.list_wrap}>
           <ul className={styles.list}>
@@ -80,7 +82,7 @@ export default function Values() {
           </ul>
 
           <a
-            href="#"
+            href="https://t.me/usaffiliate"
             className={styles.button}
             target="_blank"
             rel="noopener noreferrer"

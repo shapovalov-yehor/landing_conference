@@ -15,8 +15,8 @@ export const navItems = [
   { label: 'Кто мы такие', href: '#about' },
   { label: 'Экосистема', href: '#ecosystem' },
   { label: 'Наша ценность для сообщества', href: '#community' },
-  { label: 'Наши принципы', href: '#principles' },
-  { label: 'Достижения в цифрах', href: '#achievements' },
+  { label: 'Наши принципы', href: '#values' },
+  { label: 'Достижения в цифрах', href: '#achieve' },
   { label: 'Контакты', href: '#contacts' },
 ];
 
@@ -136,11 +136,11 @@ export const resourseItems = [
     icon: 'icon-ua-proxy',
     link: 'https://proxy.mustage.io/',
   },
-  {
-    text: 'Уникализатор фото/видео креативов',
-    icon: 'icon-creativ',
-    link: 'https://t.me/mustage_service_bot',
-  },
+  //   {
+  //     text: 'Уникализатор фото/видео креативов',
+  //     icon: 'icon-creativ',
+  //     link: 'https://t.me/mustage_service_bot',
+  //   },
   {
     text: 'Бесплатное обучение арбитражу трафика',
     icon: 'icon-graduation',

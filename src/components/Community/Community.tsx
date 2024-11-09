@@ -4,7 +4,6 @@ import styles from './Community.module.css';
 export default function Community() {
   return (
     <section id="community" className={styles.community}>
-      <div className={styles.container}>
         <h2 className={styles.header}>
           Наша ценность для сообщества или же <span>Mustage Community</span>
         </h2>
@@ -41,7 +40,6 @@ export default function Community() {
             </p>
           </div>
         </div>
-      </div>
     </section>
   );
 }

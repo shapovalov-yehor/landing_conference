@@ -1,13 +1,11 @@
 .header {
   position: absolute;
   top: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-}
-
-.container {
-  position: relative;
   margin: 0 auto;
+  width: 100%;
   max-width: 91.1%;
   background-color: var(--header-back);
   border-radius: 0px 0px 32px 32px;
@@ -37,10 +35,31 @@
 }
 
 .nav_list {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 520px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 700px;
+    gap: 24px;
+    row-gap: 16px;
+  }
+
+  @media (min-width: 1350px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1408px) {
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .nav_link {
@@ -93,7 +112,6 @@
 
 .nav {
   display: none;
-
   @media (min-width: 768px) {
     display: block;
   }
