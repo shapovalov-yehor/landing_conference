@@ -1,8 +1,4 @@
 .clients {
-  width: 100%;
-}
-
-.container {
   margin: 0 auto;
   max-width: var(--container);
   @media (min-width: 1408px) {

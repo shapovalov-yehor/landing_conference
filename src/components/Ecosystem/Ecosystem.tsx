@@ -3,7 +3,6 @@ import styles from './Ecosystem.module.css';
 export default function Ecosystem() {
   return (
     <section id="ecosystem" className={styles.ecosystem}>
-      <div className={styles.container}>
         <h2 className={styles.header}>От аккаунтов к экосистеме</h2>
         <div className={styles.eco_wrap}>
           <div className={styles.par_wrap_first}>
@@ -35,7 +34,6 @@ export default function Ecosystem() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

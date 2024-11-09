@@ -1,20 +1,31 @@
 .contacts {
-  width: 100%;
-}
-
-.container {
+  position: relative;
   margin: 0 auto;
   max-width: var(--container);
-  background-image: url('../../img/contacts/back.webp');
-  background-repeat: no-repeat;
-  background-size: 268px 238px;
-  background-position: top 500px center;
   padding-bottom: 40px;
   @media (min-width: 1408px) {
     max-width: var(--desktop);
-    background-size: 567px 504px;
-    background-position: top 5px right 1px;
     padding-bottom: 60px;
+  }
+}
+
+.back {
+  margin: 0 auto;
+  width: var(--container);
+  aspect-ratio: 1 / 1;
+  width: 268px;
+  height: 238px;
+  background-image: url('../../img/contacts/back.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+
+  @media (min-width: 1408px) {
+    position: absolute;
+    right: 1px;
+    top: 5px;
+    width: 567px;
+    height: 504px;
   }
 }
 
@@ -22,10 +33,11 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-
+  margin-bottom: 24px;
   @media (min-width: 1408px) {
     width: 807px;
     gap: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -166,10 +178,8 @@
 .main_wrap {
   display: flex;
   flex-direction: column;
-  gap: 273px;
 
   @media (min-width: 1408px) {
-    gap: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;

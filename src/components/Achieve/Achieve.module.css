@@ -35,7 +35,7 @@
   line-height: 19.5px;
   display: block;
   width: var(--container);
-
+  margin: 0 auto;
   padding: 18px 40px;
   box-shadow: 0px 20px 31.4px -13px rgba(55, 58, 255, 0.4);
   background-image: var(--main-grad);
@@ -166,6 +166,7 @@
       grid-row: 2;
     }
     & li:nth-child(8) {
+      width: 100%;
       position: absolute;
       bottom: 80px;
       left: 50%;

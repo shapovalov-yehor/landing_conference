@@ -1,8 +1,4 @@
 .community {
-  width: 100%;
-}
-
-.container {
   margin: 0 auto;
   width: var(--container);
   padding: 88px 0 80px;
