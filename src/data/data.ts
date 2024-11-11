@@ -12,12 +12,12 @@ import proxyClient from '../img/clients/proxy.webp';
 import sender from '../img/clients/sender.webp';
 
 export const navItems = [
-  { label: 'Кто мы такие', href: '#about' },
-  { label: 'Экосистема', href: '#ecosystem' },
-  { label: 'Наша ценность для сообщества', href: '#community' },
-  { label: 'Наши принципы', href: '#values' },
-  { label: 'Достижения в цифрах', href: '#achieve' },
-  { label: 'Контакты', href: '#contacts' },
+  { label: 'Header.about', href: '#about' },
+  { label: 'Header.ecosystem', href: '#ecosystem' },
+  { label: 'Header.community', href: '#community' },
+  { label: 'Header.values', href: '#values' },
+  { label: 'Header.achieve', href: '#achieve' },
+  { label: 'Header.contacts', href: '#contacts' },
 ];
 
 export const devItems = [

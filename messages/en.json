@@ -1,0 +1,47 @@
+{
+  "Header": {
+    "home": "MUSTAGE",
+    "about": "About",
+    "ecosystem": "ecosystem",
+    "community": "community",
+    "values": "values",
+    "achieve": "achieve",
+    "contacts": "contacts"
+  },
+  "Hero": {
+    "title": "Hero"
+  },
+  "About": {
+    "title": "About"
+  },
+  "Achieve": {
+    "title": "Achieve"
+  },
+  "Clients": {
+    "title": "Clients"
+  },
+  "Community": {
+    "title": "Community"
+  },
+  "Contacts": {
+    "title": "Contacts"
+  },
+  "Development": {
+    "title": "Development"
+  },
+  "Ecosystem": {
+    "title": "Ecosystem"
+  },
+  "Footer": {
+    "title": "Footer"
+  },
+  "Future": {
+    "title": "Future"
+  },
+  "Media": {
+    "title": "Media"
+  },
+  "Values": {
+    "title": "Values"
+  }
+}

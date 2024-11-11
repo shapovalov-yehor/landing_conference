@@ -1,6 +1,8 @@
+import { useTranslations } from 'next-intl';
 import { navItems } from '@/data/data';
 import styles from './MobMenu.module.css';
 import Icon from '@/helpers/Icon';
+import Link from 'next/link';
 
 type MobMenuProps = {
   isMenuOpen: boolean;
@@ -8,6 +10,8 @@ type MobMenuProps = {
 };
 
 export default function MobMenu({ isMenuOpen, closeMenu }: MobMenuProps) {
+  const t = useTranslations('');
+
   return (
     <div
       onClick={closeMenu}
@@ -19,10 +23,10 @@ export default function MobMenu({ isMenuOpen, closeMenu }: MobMenuProps) {
         className={styles.burger_menu}
         onClick={event => event.stopPropagation()}
       >
-        <a className={styles.logo_wrap} href="/">
+        <Link className={styles.logo_wrap} href="/">
           <Icon name="icon-logo" width={48} height={40} />
-          <span className={styles.logo_text}>MUSTAGE</span>
-        </a>
+          <span className={styles.logo_text}>{t('Header.home')}</span>
+        </Link>
 
         <nav>
           <ul>
@@ -32,7 +36,7 @@ export default function MobMenu({ isMenuOpen, closeMenu }: MobMenuProps) {
                 key={index}
                 onClick={closeMenu}
               >
-                <a href={item.href}>{item.label}</a>
+                <Link href={item.href}>{t(item.label)}</Link>
               </li>
             ))}
           </ul>
