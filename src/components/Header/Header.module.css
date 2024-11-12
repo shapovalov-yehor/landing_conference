@@ -117,3 +117,9 @@
     display: block;
   }
 }
+
+.language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

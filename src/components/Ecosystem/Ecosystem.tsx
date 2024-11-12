@@ -1,39 +1,40 @@
 import styles from './Ecosystem.module.css';
+import { useTranslations } from 'next-intl';
 
 export default function Ecosystem() {
+  const t = useTranslations();
+
   return (
     <section id="ecosystem" className={styles.ecosystem}>
-        <h2 className={styles.header}>От аккаунтов к экосистеме</h2>
-        <div className={styles.eco_wrap}>
-          <div className={styles.par_wrap_first}>
-            <h3 className={styles.eco_par_header}>
-              Начав наш путь с продажи Facebook-аккаунтов,
-            </h3>
+      <h2 className={styles.header}>{t('Ecosystem.header')}</h2>
+      <div className={styles.eco_wrap}>
+        <div className={styles.par_wrap_first}>
+          <h3 className={styles.eco_par_header}>
+            {t('Ecosystem.par_first_header')}
+          </h3>
+          <p className={styles.eco_par}>{t('Ecosystem.par_first')}</p>
+        </div>
+        <div className={styles.par_wrap_second}>
+          <div className={styles.eco_par_wrap}>
             <p className={styles.eco_par}>
-              мы быстро поняли, что рынку нужно гораздо больше. Наши клиенты
-              сталкивались с различными проблемами в арбитраже трафика, и мы
-              решили создать комплексное решение для каждой из них.
+              {t('Ecosystem.par_second_first.1')}{' '}
+              <span>{t('Ecosystem.par_second_first.2')}</span>
+              {t('Ecosystem.par_second_first.3')}
+              {'\n'}
+              <span>{t('Ecosystem.par_second_first.4')}</span>
+              {t('Ecosystem.par_second_first.5')}
             </p>
           </div>
-          <div className={styles.par_wrap_second}>
-            <div className={styles.eco_par_wrap}>
-              <p className={styles.eco_par}>
-                Сначала появился <span>Mustage Store</span> или же, будет
-                правильнее сказать, продавец — {'\n'}
-                <span>Mustage Support,</span> на первых этапах выполнявший роль
-                магазина пока мы не сделали полноценный сайт.
-              </p>
-            </div>
-            <div className={styles.eco_par_wrap}>
-              <p className={styles.eco_par}>
-                <span>Mustage Store</span> — место, где каждый арбитражник может
-                найти качественные аккаунты для работы.{'\n'} Мы перфекционисты
-                в том, что касается качества, поэтому каждый аккаунт проходит
-                тщательную проверку перед продажей.
-              </p>
-            </div>
+          <div className={styles.eco_par_wrap}>
+            <p className={styles.eco_par}>
+              <span>{t('Ecosystem.par_second_second.1')}</span>
+              {t('Ecosystem.par_second_second.2')}
+              {'\n'}
+              {t('Ecosystem.par_second_second.3')}
+            </p>
           </div>
         </div>
+      </div>
     </section>
   );
 }

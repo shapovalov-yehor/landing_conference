@@ -1,10 +1,13 @@
+import { useTranslations } from 'next-intl';
 import Icon from '@/helpers/Icon';
 import styles from './Media.module.css';
 
 export default function Media() {
+  const t = useTranslations();
+
   return (
     <section id="media" className={styles.media}>
-      <h2 className={styles.header}>Медиа-присутствие</h2>
+      <h2 className={styles.header}>{t('Media.header')}</h2>
       <div className={styles.back}></div>
       <div className={styles.main_wrap}>
         <ul className={styles.list}>
@@ -13,10 +16,8 @@ export default function Media() {
               <Icon name="icon-youtube" width={40} height={28} />
             </div>
             <p>
-              <span>Наш YouTube-канал</span> вырос из простых обучающих видео в
-              полноценную медиа-платформу с аудиторией более 18,000 подписчиков.
-              Мы говорим о сложных вещах простым языком и делимся реальным
-              опытом.
+              <span>{t('Media.youtube_channel_title')}</span>{' '}
+              {t('Media.youtube_channel_description')}
             </p>
           </li>
           <li className={styles.item}>
@@ -24,12 +25,8 @@ export default function Media() {
               <Icon name="icon-telegram" width={40} height={40} />
             </div>
             <p>
-              <span>В Telegram мы создали живое сообщество,</span> где более
-              15,000 специалистов ежедневно обмениваются опытом, обсуждают
-              тренды и помогают друг другу расти. Наши сервисные боты служат
-              отличным инструментом для поддержания активности аудитории. Общая
-              численность подписчиков наших Telegram-ботов насчитывает 10282
-              пользователей.
+              <span>{t('Media.telegram_community_title')}</span>{' '}
+              {t('Media.telegram_community_description')}
             </p>
           </li>
           <li className={styles.item}>
@@ -38,41 +35,29 @@ export default function Media() {
             </div>
             <div className={styles.bot_wrap}>
               <p>
-                <span>Мы разработали целую систему ботов,</span> которая
-                помогает нашим пользователям решать повседневные задачи:
+                <span>{t('Media.bots_title')}</span>{' '}
+                {t('Media.bots_description')}
               </p>
               <ul className={styles.bot_list}>
                 <li>
-                  <p>
-                    Бот для уникализации креативов упростил работу с визуальным
-                    контентом
-                  </p>
+                  <p>{t('Media.bot_list.bot_1')}</p>
                 </li>
                 <li>
-                  <p>
-                    Гивэвей-боты создают дополнительную ценность для сообщества;
-                  </p>
+                  <p>{t('Media.bot_list.bot_2')}</p>
                 </li>
                 <li>
-                  <p>
-                    Образовательный бот помогает структурировать процесс
-                    обучения
-                  </p>
+                  <p>{t('Media.bot_list.bot_3')}</p>
                 </li>
               </ul>
-              <p className={styles.bot_par}>
-                Полный список наших ботов вы можете увидеть по ссылке:
-              </p>
+              <p className={styles.bot_par}>{t('Media.bot_link_text')}</p>
               <a
-                href="https://dawn-top-e5f.notion.site/1eee9955ca9d4c18bca3b0e67f2c92e7"
+                href={t('Media.bot_link')}
                 className={styles.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Icon name="icon-link" width={24} height={24} />
-                <span>
-                  https://dawn-top-e5f.notion.site/1eee9955ca9d4c18bca3b0e67f2c92e7
-                </span>
+                <span>{t('Media.bot_link')}</span>
               </a>
             </div>
           </li>
@@ -83,7 +68,7 @@ export default function Media() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Начать работу с Mustage
+          {t('Main.button')}
         </a>
       </div>
     </section>

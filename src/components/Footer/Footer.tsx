@@ -1,12 +1,14 @@
 import Icon from '@/helpers/Icon';
 import styles from './Footer.module.css';
 import { resourseItems } from '@/data/data';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations();
   return (
     <section id="footer" className={styles.footer}>
       <div className={styles.container}>
-        <h3 className={styles.header}>Наши ресурсы:</h3>
+        <h3 className={styles.header}>{t('Footer.title')}</h3>
 
         <ul className={styles.list}>
           {resourseItems.map((item, index) => (
@@ -17,7 +19,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p>{item.text}</p>
+                <p>{t(item.text)}</p>
                 <Icon name={item.icon} width={40} height={40} />
               </a>
             </li>

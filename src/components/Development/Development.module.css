@@ -15,10 +15,14 @@
 }
 
 .header {
-  font-size: var(--fs-mxlarge);
+  font-size: 38px;
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 8px;
+
+  @media (min-width: 360px) {
+    font-size: var(--fs-mxlarge);
+  }
 
   @media (min-width: 1408px) {
     font-size: var(--fs-xxlarge);
@@ -102,7 +106,7 @@
   font-size: var(--fs-small);
   font-weight: 600;
   line-height: 19.5px;
-  padding: 16px 40px;
+  padding: 16px 15px;
   box-shadow: 0px 20px 31.4px -13px rgba(55, 58, 255, 0.4);
   background-image: var(--main-grad);
   border-radius: 200px;
@@ -111,7 +115,7 @@
   align-self: flex-end;
   @media (min-width: 1408px) {
     font-size: var(--fs-medium);
-    padding: 20px 48px;
+    padding: 20px 38px;
     line-height: 21.94px;
     color: var(--foreground);
     align-self: flex-end;

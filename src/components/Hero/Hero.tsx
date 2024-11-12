@@ -1,12 +1,15 @@
 import styles from './Hero.module.css';
 import logo from '../../img/hero/logo.svg';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('');
+
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.hero_text}>Кто такие Mustage Team</h1>
+        <h1 className={styles.hero_text}>{t('Hero.title')}</h1>
         <Image
           className={styles.hero_logo}
           src={logo}

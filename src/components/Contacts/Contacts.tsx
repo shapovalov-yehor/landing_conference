@@ -1,12 +1,15 @@
+import { useTranslations } from 'next-intl';
 import Icon from '@/helpers/Icon';
 import styles from './Contacts.module.css';
 import { contactsTexts } from '@/data/data';
 
 export default function Contacts() {
+  const t = useTranslations();
+
   return (
     <section id="contacts" className={styles.contacts}>
-      <h2 className={styles.header}>Контакты</h2>
-      <p className={styles.par}>Поддержка по направлениям:</p>
+      <h2 className={styles.header}>{t('Contacts.header')}</h2>
+      <p className={styles.par}>{t('Contacts.supportText')}</p>
       <div className={styles.main_wrap}>
         <ul className={styles.list}>
           {contactsTexts.map((item, index) => (
@@ -15,7 +18,7 @@ export default function Contacts() {
                 <Icon name="icon-support" width={32} height={32} />
               </div>
               <p>
-                {item.text}
+                {t(`Contacts.${item.textKey}`)}
                 <a
                   href={`https://t.me/${item.link}`}
                   target="_blank"
@@ -31,7 +34,7 @@ export default function Contacts() {
         <div className={styles.back}></div>
 
         <div className={styles.button_wrap}>
-          <p>Реклама и сотрудничество -</p>
+          <p>{t('Contacts.advertisingText')}</p>
           <a
             href="https://t.me/usaffiliate"
             className={styles.button}

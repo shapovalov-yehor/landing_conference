@@ -61,7 +61,11 @@ export default function Header({ locale }: { locale: string }) {
       )}
 
       <MobMenu isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
-      <select value={locale} onChange={handleLanguageChange}>
+      <select
+        className={styles.language}
+        value={locale}
+        onChange={handleLanguageChange}
+      >
         <option value="en">EN</option>
         <option value="ru">RU</option>
       </select>
