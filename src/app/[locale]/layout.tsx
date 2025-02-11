@@ -13,7 +13,7 @@ const montserrat = Montserrat({
   variable: '--font-mons',
 });
 
-export const localeMetadata: Record<
+const localeMetadata: Record<
   string,
   { title: string; description: string; keywords: string }
 > = {
