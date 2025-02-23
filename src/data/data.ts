@@ -39,7 +39,7 @@ export const devItems = [
     headerKey: 'mustageAcademyHeader',
     textKey: 'mustageAcademyText',
     img: academy,
-    link: 'https://mustage.io/course',
+    link: 'https://academy.mustage.team/',
   },
   {
     headerKey: 'mustageServiceBotHeader',
@@ -111,7 +111,7 @@ export const resourseItems = [
   {
     text: 'Footer.graduation',
     icon: 'icon-graduation',
-    link: 'https://mustage.io/course',
+    link: 'https://academy.mustage.team/',
   },
   {
     text: 'Footer.creativity',
