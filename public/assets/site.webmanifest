@@ -1,15 +1,18 @@
 {
   "name": {
     "ru": "Mustage Team – История и Ценности",
-    "en": "Mustage Team – Our Story and Values"
+    "en": "Mustage Team – Our Story and Values",
+    "uk": "Mustage Team – Наша історія та цінності"
   },
   "short_name": {
     "ru": "Mustage",
-    "en": "Mustage"
+    "en": "Mustage",
+    "uk": "Mustage"
   },
   "description": {
     "ru": "Узнайте, как Mustage Team прошла путь от небольшой команды до экосистемы в affiliate-маркетинге. Наши ценности: прозрачность, инновации и поддержка.",
-    "en": "Discover how Mustage Team evolved from a small team into an ecosystem in affiliate marketing. Our core values: transparency, innovation, and support."
+    "en": "Discover how Mustage Team evolved from a small team into an ecosystem in affiliate marketing. Our core values: transparency, innovation, and support.",
+    "uk": "Дізнайтеся, як Mustage Team пройшла шлях від невеликої команди до екосистеми в affiliate-маркетингу. Наші основні цінності: прозорість, інновації та підтримка."
   },
   "icons": [
     {
@@ -28,7 +31,7 @@
   "theme_color": "#6e6bff",
   "background_color": "#f1f1f6",
   "display": "standalone",
-  "lang": ["ru", "en"],
-  "start_url": "/ru",
+  "lang": ["uk", "ru", "en"],
+  "start_url": "/uk",
   "scope": "/"
 }

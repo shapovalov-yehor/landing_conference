@@ -34,6 +34,15 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       >
         <button
           className={`${styles.button} ${
+            locale === 'uk' ? styles.buttonActive : ''
+          }`}
+          onClick={() => handleLanguageChange('uk')}
+          type="button"
+        >
+          UA
+        </button>
+        <button
+          className={`${styles.button} ${
             locale === 'ru' ? styles.buttonActive : ''
           }`}
           onClick={() => handleLanguageChange('ru')}

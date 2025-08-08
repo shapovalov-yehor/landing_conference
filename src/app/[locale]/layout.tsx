@@ -31,6 +31,13 @@ const localeMetadata: Record<
     keywords:
       'Mustage Team, company history, values, transparency, innovation, support, traffic arbitrage, affiliate marketing',
   },
+  uk: {
+    title: 'Mustage Team – Історія, цінності та інновації',
+    description:
+      'Дізнайтеся, як Mustage Team пройшла шлях від невеликої команди до екосистеми в affiliate-маркетингу. Наші цінності: прозорість, інновації та підтримка.',
+    keywords:
+      'Mustage Team, історія компанії, цінності, прозорість, інновації, підтримка, арбітраж трафіку, affiliate-маркетинг',
+  },
 };
 
 type Props = {
@@ -41,7 +48,7 @@ export const generateMetadata = async ({
   params,
 }: Props): Promise<Metadata> => {
   const { locale } = await params;
-  const metadataValues = localeMetadata[locale] || localeMetadata.ru;
+  const metadataValues = localeMetadata[locale] || localeMetadata.uk;
 
   return {
     metadataBase: new URL(
