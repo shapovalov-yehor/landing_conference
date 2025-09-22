@@ -26,9 +26,34 @@ export default function Footer() {
           ))}
         </ul>
         <div className={styles.email_wrap}>
-          <a href="mailto:support@mustage.io">support@mustage.io</a>
-          <div className={styles.email_icon_wrap}>
-            <Icon name="icon-email" width={32} height={32} />
+          <div className={styles.footer_icon}>
+            <Icon name="icon-logo_footer" width={88} height={72} />
+            <span className={styles.logo_text}>Mustage OÜ</span>
+          </div>
+          <div className={styles.location_wrap}>
+            <div className={styles.email_wrapper}>
+              <a
+                className={styles.email_text}
+                href="mailto:mustage.team@gmail.com"
+              >
+                mustage.team@gmail.com
+              </a>
+              <div className={styles.email_icon_wrap}>
+                <Icon name="icon-email" width={24} height={24} />
+              </div>
+            </div>
+            <div className={styles.email_wrapper}>
+              <a
+                className={styles.location_text}
+                href="https://www.google.com/maps/place/Kaupmehe+tn+7,+10114+Tallinn,+Estonia/data=!4m2!3m1!1s0x469294a1c763a151:0x1ac152d4e95a121f?sa=X&ved=1t:242&ictx=111"
+              >
+                Harju maakond, Tallinn, Kesklinna linnaosa, Kaupmehe tn 7-120,
+                10114
+              </a>
+              <div className={styles.email_icon_wrap}>
+                <Icon name="icon-location" width={24} height={24} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
