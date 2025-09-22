@@ -167,18 +167,7 @@
   gap: 12px;
 }
 
-.email_text {
-  color: rgba(86, 113, 255, 1);
-  position: relative;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: underline;
-  @media (min-width: 768px) {
-    font-size: 20px;
-    align-self: flex-end;
-  }
-}
-
+.email_text,
 .location_text {
   color: rgba(86, 113, 255, 1);
   position: relative;
@@ -188,6 +177,10 @@
     font-size: 20px;
     align-self: flex-end;
   }
+}
+
+.email_text {
+  text-decoration: underline;
 }
 
 .email_icon_wrap {
