@@ -92,8 +92,8 @@ export const contactsTexts = [
   },
   {
     textKey: 'courseCurator',
-    name: '@mustage_study',
-    link: 'mustage_study',
+    name: '@mak_simuch',
+    link: 'mak_simuch',
   },
 ];
 
